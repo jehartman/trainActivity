@@ -1,0 +1,97 @@
+body {
+  background-color: #C7E198;
+}
+
+img {
+  max-width: 20%;
+  max-height: 100%;
+  float: left;
+}
+
+header {
+  padding: 5px 0 20px 60px;
+  text-align: center;
+  position: relative;
+  background-color: #DAF7A6;
+  color: #13480D;
+  font-family: 'Bree Serif', serif;
+  font-size: 2em;
+  border-bottom: 4px solid #839364;
+  opacity: .8;
+  overflow: auto;
+}
+
+hr {
+  color: #839364;
+}
+
+legend {
+  margin: 10px 0 20px 0;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.1em;
+  font-weight: 300;text-align: center;
+
+}
+
+th, label, button {
+  font-family: 'Bree Serif', serif;
+  font-size: .8em;
+
+}
+
+  /* Flaired edges, by Tomas Theunissen */
+
+hr {
+      overflow: visible; /* For IE */
+      height: 30px;
+      border-style: solid;
+      border-color: #839364;
+      border-width: 1px 0 0 0;
+      border-radius: 20px;
+}
+
+hr:before { /* Not really supposed to work, but does */
+      display: block;
+      content: "";
+      height: 30px;
+      margin-top: -31px;
+      border-style: solid;
+      border-color: #839364;
+      border-width: 0 0 1px 0;
+      border-radius: 20px;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+#trainLeft {
+  padding-top: 10px;
+  opacity: .5
+}
+
+#trainLeftBright {
+  padding-top: 10px;
+  opacity: 1;
+}
+
+#boom {
+  max-width: 20%;
+  max-height: 100%;
+  float: left;
+}
+
+#bannerContainer {
+  height: 85px;
+  position: relative;
+
+}
+
+
+#banner {
+float: left;
+  text-align: center;
+  margin: 30px 30px 10px 30px;
+  letter-spacing: 3px;
+  font-style: italic;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Train Timer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/locale/af.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/reset.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Libre+Baskerville|Lora|PT+Serif" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div id="bannerContainer">
+      <img src="assets/images/trainLeftFacing.png" alt="" id="trainLeft">
+      <span id="banner">TRAIN TIMER</span>
+      <!-- <img src="assets/images/trainRightFacing.png" alt="train image" id="trainRight"> -->
+    </div>
+  </header>
+  <div class="container">
+    <div class="wrapper">
+      <table class="table table-bordered table-striped table-responsive">
+      	<thead>
+      		<tr>
+            <th>Train Name</th>
+      			<th>Destination</th>
+            <th>First Run</th>
+      			<th>Frequency (minutes)</th>
+      			<th>Next Arrival</th>
+      			<th>Minutes Away</th>
+      		</tr>
+      	</thead>
+      	<tbody id="trainSchedule">
+      		<!-- <tr>
+      			<td id="trainName"></td><td id="destination"></td><td id="firstRun"></td><td id="frequency"></td><td id="nextArrival"></td><td id="minutesAway"></td>
+      		</tr> -->
+      	</tbody>
+      </table>
+    <!-- end of table wrapper -->
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="wrapper">
+      <form class="form-horizontal">
+      <fieldset>
+
+      <!-- Form Name -->
+      <legend>Track Your Own Train</legend>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="Train Name">Train Name</label>
+        <div class="col-md-4">
+        <input id="trainNameInput" name="Train Name" type="text" placeholder="" class="form-control input-md" required="true">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="destination">Destination</label>
+        <div class="col-md-4">
+        <input id="destinationInput" name="destination" type="text" placeholder="" class="form-control input-md" required="true">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="firstRunInput">First Train Time (HH:MM - military time)</label>
+        <div class="col-md-4">
+        <input id="firstRunInput" name="firstRunInput" type="text" placeholder="" class="form-control input-md" required="true">
+
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="frequency">Frequency (minutes)</label>
+        <div class="col-md-4">
+        <input id="frequencyInput" name="frequency" type="text" placeholder="" class="form-control input-md" required="true">
+
+        </div>
+      </div>
+
+      <!-- Button (Double) -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="button1id"></label>
+        <div class="col-md-8">
+          <button id="submitButton" name="button1id" class="btn btn-success">Add a Train</button>
+          <button id="destroyButton" name="button2id" class="btn btn-danger">Destroy All Trains Because They're Noisy</button>
+        </div>
+      </div>
+
+      </fieldset>
+      </form>
+<!-- end of form wrapper -->
+    </div>
+<!-- end of container -->
+</div>
+
+
+
+<script src="assets/javascript/javascript.js"></script>
+</body>
+
+</html>
