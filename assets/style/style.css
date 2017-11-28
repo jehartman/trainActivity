@@ -36,7 +36,10 @@ legend {
 th, label, button {
   font-family: 'Bree Serif', serif;
   font-size: .8em;
+}
 
+td {
+  font-size: .8em;
 }
 
   /* Flaired edges, by Tomas Theunissen */
